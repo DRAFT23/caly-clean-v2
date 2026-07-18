@@ -1,0 +1,177 @@
+import type { Dictionary } from "./fr";
+
+const en: Dictionary = {
+  locale: "en",
+  meta: {
+    title: "Caly Nails — Premium Manicure & Pedicure in Geneva",
+    description:
+      "Nail and beauty salon in Geneva. Manicure, pedicure, gel polish and nail art crafted with precision at Caly Nails, Rue de Monthoux 23. Book online.",
+    keywords: [
+      "manicure Geneva",
+      "pedicure Geneva",
+      "nail art Geneva",
+      "beauty salon Geneva",
+      "gel polish Geneva",
+      "Caly Nails",
+    ],
+  },
+  nav: {
+    gallery: "Gallery",
+    services: "Services",
+    world: "Our world",
+    reviews: "Reviews",
+    book: "Book now",
+    whatsapp: "WhatsApp",
+    instagram: "Instagram",
+    findUs: "Find us",
+    servicesMenu: {
+      manucure: "Manicure",
+      pieds: "Foot care",
+      nailart: "Nail Art",
+      offres: "Offers",
+    },
+  },
+  hero: {
+    badge: "Beauty Studio · Geneva",
+    tagline: [
+      "Beauty for hands & feet.",
+      "Treatments designed with elegance,",
+      "delivered with precision.",
+    ],
+    ratingMobile: "4.9 / 5 · Salonkee",
+    ratingDesktop: "4.9 / 5 · Verified reviews on Salonkee",
+    book: "Book now",
+    whatsapp: "WhatsApp",
+    instagram: "Instagram",
+    a11yTitle: "Caly Nails — Beauty Studio in Geneva",
+  },
+  gallery: {
+    eyebrow: "Our work",
+    title: "Hands, beautifully refined.",
+    subtitle: "A selection of natural, luminous, refined nail looks.",
+    sideText:
+      "Every look is designed as a style detail: soft, luminous, precise, and tailored to your personality.",
+    mobileImages: [
+      { src: "/gallery-cat-eye.webp", title: "Cat Eye" },
+      { src: "/gallery-couleur-intense.webp", title: "Bold colour" },
+      { src: "/gallery-nail-art.webp", title: "Nail Art" },
+      { src: "/gallery-nude.webp", title: "Nude" },
+    ],
+    desktopImages: [
+      { src: "/gallery-details.webp", title: "Delicate details", className: "md:row-span-2 md:h-[620px]" },
+      { src: "/gallery-cat-eye.webp", title: "Bright French", className: "" },
+      { src: "/gallery-couleur-intense.webp", title: "Bold colour", className: "" },
+      { src: "/gallery-nail-art.webp", title: "Nail Art", className: "md:col-span-2 md:h-[300px]" },
+    ],
+    ctaTitle: "See all our work",
+    ctaLink: "Instagram →",
+  },
+  services: {
+    eyebrow: "Services",
+    title: "Beauty for hands & feet.",
+    subtitle:
+      "Treatments designed with elegance and delivered with precision, for a lasting, harmonious result.",
+    oldPriceLabel: "instead of",
+    tabs: [
+      { id: "manucure", label: "Manicure" },
+      { id: "pieds", label: "Foot care" },
+      { id: "nailart", label: "Nail Art" },
+      { id: "offres", label: "Offers" },
+    ],
+    data: {
+      manucure: [
+        { title: "Manicure without polish", description: "Clean, precise care for nails and cuticles.", price: "35 CHF", time: "20 min" },
+        { title: "Manicure & classic polish", description: "An elegant finish with traditional polish.", price: "45 CHF", time: "30 min" },
+        { title: "Filing & classic polish", description: "Quick shaping and polish application.", price: "25 CHF", time: "15 min" },
+        { title: "Manicure & gel polish", description: "A glossy, long-lasting, refined result.", price: "65 CHF", time: "45 min", note: "+ removal add. +10 CHF" },
+        { title: "Gel polish without manicure", description: "Filing and gel polish on natural nails.", price: "50 CHF", time: "30 min" },
+        { title: "Natural nail strengthening", description: "Strengthens the nail while keeping a natural look.", price: "75 CHF", time: "50 min" },
+        { title: "Gel fill-in", description: "Maintenance of your gel set for up to 4 weeks.", price: "90 CHF", time: "75 min", note: "max 4 weeks" },
+        { title: "Gel fill-in, 4+ weeks", description: "A full refresh of your gel set.", price: "100 CHF", time: "90 min" },
+        { title: "Full gel extension (tips)", description: "Full extension with custom sculpting.", price: "120 CHF", time: "90 min" },
+        { title: "Broken nail repair", description: "Spot correction to restore a harmonious set.", price: "from 5 CHF" },
+        { title: "Gel polish removal", description: "Gentle, clean removal of gel polish.", price: "20 CHF", time: "20 min" },
+        { title: "Gel removal", description: "Gel removal with care for the natural nail.", price: "30 CHF", time: "30 min" },
+        { title: "Mini manicure", description: "Light treatment reserved for under-14s.", price: "20 CHF", time: "15 min", note: "under 14 only" },
+      ],
+      pieds: [
+        { title: "Express pedicure, no polish", description: "Quick treatment for clean, well-kept feet.", price: "50 CHF", time: "30 min" },
+        { title: "Pedicure & classic polish", description: "Foot care finished with classic polish.", price: "65 CHF", time: "40 min" },
+        { title: "Filing & classic polish", description: "Nail shaping and polish application.", price: "35 CHF", time: "15 min" },
+        { title: "Pedicure & gel polish", description: "A durable, glossy finish for your feet.", price: "75 CHF", time: "45 min", note: "+ removal add. +10 CHF" },
+        { title: "Filing & gel polish", description: "Quick gel polish application without a full treatment.", price: "60 CHF", time: "30 min" },
+        { title: "Spa pedicure, no polish", description: "A more complete treatment for comfort and softness.", price: "70 CHF", time: "40 min" },
+        { title: "Spa pedicure & classic polish", description: "Spa treatment finished with classic polish.", price: "85 CHF", time: "50 min" },
+        { title: "Spa pedicure & gel polish", description: "Full spa treatment with a long-lasting finish.", price: "95 CHF", time: "60 min", note: "+ removal add. +10 CHF" },
+        { title: "Gel toenail reconstruction", description: "Targeted reconstruction of a toenail.", price: "10 CHF" },
+        { title: "Mini pedicure", description: "Light treatment reserved for under-14s.", price: "30 CHF", time: "15 min", note: "under 14 only" },
+        { title: "Foot massage + scrub", description: "A relaxing moment for soft, rested feet.", price: "45 CHF", time: "30 min" },
+      ],
+      nailart: [
+        { title: "French", description: "An elegant, timeless finish.", price: "10 CHF", time: "10 min" },
+        { title: "Babyboomer / babycolor", description: "A soft gradient for a natural, refined look.", price: "10 CHF", time: "10 min" },
+        { title: "Powder, chrome effect…", description: "A luminous effect to personalise your set.", price: "10 CHF", time: "10 min" },
+      ],
+      offres: [
+        { title: "Manicure + Spa pedicure, no polish", description: "A complete hand & foot treatment, no polish.", price: "90 CHF", oldPrice: "105 CHF", time: "60 min" },
+        { title: "Classic manicure + Classic spa pedicure", description: "Complete treatment with classic polish, hands & feet.", price: "115 CHF", oldPrice: "130 CHF", time: "80 min" },
+        { title: "Gel manicure + Gel spa pedicure", description: "The complete package with a long-lasting finish.", price: "145 CHF", oldPrice: "160 CHF", time: "105 min" },
+        { title: "Student offer", description: "Valid with a student card.", price: "-10%", note: "with student card" },
+      ],
+    },
+  },
+  ourWorld: {
+    eyebrow: "Our world",
+    title: "A space designed for your wellbeing.",
+    paragraph:
+      "At Caly Nails, we believe a beautiful result starts long before the polish. Every appointment takes place in an elegant, clean and soothing space, where hygiene, product quality and attention to detail come first. Our goal is to give you a moment of relaxation, in an environment where you feel at ease right away.",
+    values: [
+      "Impeccable hygiene",
+      "Professional products",
+      "Respect for the natural nail",
+      "A warm experience",
+    ],
+  },
+  reviews: {
+    eyebrow: "Client reviews",
+    title: "The clients who come back are our best ambassadors.",
+    subtitle:
+      "For over 10 years, Caly Nails has cared for its clients with the same standard: precise work, a warm welcome and an experience that makes you want to return.",
+    verifiedLabel: "verified reviews",
+    verifiedTag: "Verified client",
+    items: [
+      { initial: "F", name: "Françoise", text: "I've been coming every month for several months now. The welcome is warm, the treatment is done with great care, and the complimentary coffee is a lovely touch." },
+      { initial: "L", name: "Leila", text: "Flawless manicure, very precise cuticle work and a beautiful result. Coralie is always cheerful, kind and very professional." },
+      { initial: "G", name: "Gaby", text: "Absolutely thrilled with the result. Coralie is fast and confident in her work — a real pleasure." },
+      { initial: "C", name: "Carine", text: "A client for over ten years. As always, flawless work with real attention to detail." },
+      { initial: "S", name: "Sissi", text: "Excellent work, very precise. A polished result and always a pleasant experience." },
+    ],
+    ctaTitle: "See all reviews",
+    ctaLink: "Salonkee →",
+  },
+  cta: {
+    eyebrow: "Booking",
+    title: "Ready to book your appointment?",
+    subtitle: "Treat yourself to a beauty moment crafted with care, precision and elegance.",
+    book: "Book now",
+    whatsapp: "WhatsApp",
+    instagram: "Instagram",
+  },
+  footer: {
+    eyebrow: "Caly Nails",
+    title: ["Beauty Studio", "Geneva"],
+    paragraph:
+      "Hand care, foot care and Nail Art. A space designed to offer an elegant, relaxing and flawless experience.",
+    country: "Switzerland",
+    mapsLabel: "View on Google Maps →",
+    bookLabel: "Book on Salonkee →",
+    whatsappLabel: "WhatsApp →",
+    instagramLabel: "Instagram →",
+    thanksTitle: "We look forward to welcoming you at Caly Nails.",
+    thanksSubtitle: "Thank you for your trust.",
+    copyright: "© 2026 Caly Nails. All rights reserved.",
+    tagline: "Beauty Studio · Manicure · Pedicure · Nail Art",
+  },
+};
+
+export default en;

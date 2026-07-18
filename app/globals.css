@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* Mappe l'utilitaire Tailwind `font-serif` (utilisé dans tous les titres)
+   sur la police Fraunces chargée dans layout.tsx. Avant ce bloc, `font-serif`
+   n'avait aucune police custom associée et retombait sur la police serif
+   système par défaut du navigateur (Times New Roman / Georgia selon l'OS). */
+@theme inline {
+  --font-serif: var(--font-fraunces), Georgia, "Times New Roman", serif;
+}
+
+:root {
+  --cream: #f8f4ef;
+  --text: #2a2320;
+  --green: #6f836f;
+  --dark-green: #566b59;
+  --beige: #dcc8b5;
+  --gold: #b9975b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--cream);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  color-scheme: light;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  background: var(--cream);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+button,
+summary {
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+section,
+details {
+  scroll-margin-top: 115px;
+}
+
+@media (min-width: 768px) {
+  section,
+  details {
+    scroll-margin-top: 100px;
+  }
+}
