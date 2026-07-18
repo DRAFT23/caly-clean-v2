@@ -1,4 +1,7 @@
-const fr = {
+import type { Dictionary } from "./types";
+export type { Dictionary } from "./types";
+
+const fr: Dictionary = {
   locale: "fr",
   meta: {
     title: "Caly Nails — Manucure & Pédicure premium à Genève",
@@ -173,4 +176,3 @@ const fr = {
 };
 
 export default fr;
-export type Dictionary = typeof fr;

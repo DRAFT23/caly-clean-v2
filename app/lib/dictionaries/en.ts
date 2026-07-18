@@ -1,4 +1,4 @@
-import type { Dictionary } from "./fr";
+import type { Dictionary } from "./types";
 
 const en: Dictionary = {
   locale: "en",
